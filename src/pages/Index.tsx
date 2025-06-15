@@ -1,9 +1,11 @@
+
 import HeroSection from "@/components/HeroSection";
 import TeamSection from "@/components/TeamSection";
 import WhatWeDoSection from "@/components/WhatWeDoSection";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import BackToHomeButton from "@/components/BackToHomeButton";
 
 const Index = () => {
   return (
@@ -16,6 +18,7 @@ const Index = () => {
         <ContactForm />
       </div>
       <Footer />
+      <BackToHomeButton />
     </div>
   );
 };
