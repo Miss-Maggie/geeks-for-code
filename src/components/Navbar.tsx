@@ -1,3 +1,4 @@
+
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Rocket, Home, Menu } from "lucide-react";
 import { Switch } from "@/components/ui/switch";
@@ -21,7 +22,7 @@ const Navbar = () => {
   return (
     <>
       {/* Mobile Sidebar */}
-      <AppSidebar open={sidebarOpen} setOpen={setSidebarOpen} />
+      <AppSidebar /> {/* <<-- removed open and setOpen props */}
       <nav className="w-full bg-white dark:bg-[#171823] shadow sticky top-0 z-30">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 sm:px-6 md:px-8 py-4">
           <div className="flex items-center gap-3">
