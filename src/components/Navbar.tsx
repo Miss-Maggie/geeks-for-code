@@ -3,7 +3,6 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { Rocket, Home } from "lucide-react";
 import { Switch } from "@/components/ui/switch";
 import { useTheme } from "@/hooks/useTheme";
-import { SidebarTrigger } from "@/components/ui/sidebar";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -18,11 +17,7 @@ const Navbar = () => {
   return (
     <nav className="w-full bg-white dark:bg-[#171823] shadow sticky top-0 z-30">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
-        {/* Mobile sidebar trigger -- shown on small screens */}
         <div className="flex items-center gap-3">
-          <div className="md:hidden mr-2">
-            <SidebarTrigger aria-label="Open menu" />
-          </div>
           <Link to="/" className="flex items-center" aria-label="Home">
             <Home size={28} className="text-primary dark:text-white hover:scale-110 transition" />
           </Link>
@@ -31,7 +26,7 @@ const Navbar = () => {
             Geeks for Code
           </Link>
         </div>
-        <ul className="flex space-x-8 max-md:hidden">
+        <ul className="flex space-x-8">
           {navLinks.map((link) => (
             <li key={link.to}>
               {link.to.startsWith("#") ? (
