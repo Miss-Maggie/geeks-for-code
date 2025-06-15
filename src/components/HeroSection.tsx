@@ -1,0 +1,33 @@
+
+import { Rocket, Users2, Code2, Sparkles } from "lucide-react";
+
+const HeroSection = () => (
+  <header className="w-full py-16 flex flex-col items-center relative animate-fade-in">
+    <div className="absolute left-4 top-4 opacity-30 pointer-events-none max-sm:hidden">
+      <Rocket size={80} color="#070A52" strokeWidth={1.5} />
+    </div>
+    <div className="absolute right-8 top-8 opacity-30 pointer-events-none max-sm:hidden">
+      <Sparkles size={70} color="#070A52" strokeWidth={1.5} />
+    </div>
+    <h1 className="text-5xl font-extrabold mb-4 tracking-tight text-[#070A52] animate-fade-in">
+      Geeks for Code
+    </h1>
+    <p className="max-w-2xl text-xl text-center text-muted-foreground mb-6">
+      <span className="font-semibold text-[#070A52]">10 passionate members</span> collaborating to learn, build, and help others with coding, assignments, and upskilling.
+    </p>
+    <div className="flex gap-6 mb-8">
+      <Code2 size={40} color="#070A52" className="hover-scale" />
+      <Users2 size={40} color="#070A52" className="hover-scale" />
+      <Sparkles size={40} color="#070A52" className="hover-scale" />
+    </div>
+    <a
+      href="#contact"
+      className="px-8 py-3 rounded-lg font-medium bg-[#070A52] text-white text-lg shadow-lg story-link hover-scale transition-all focus:ring-2 focus:ring-offset-2 focus:ring-[#070A52]"
+      style={{ textDecoration: 'none' }}
+    >
+      Get Coding Help
+    </a>
+  </header>
+);
+
+export default HeroSection;
