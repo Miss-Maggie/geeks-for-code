@@ -12,21 +12,19 @@ import AppSidebar from "@/components/AppSidebar";
 const Index = () => {
   return (
     <SidebarProvider>
-      {/* Navbar: show only on desktop */}
-      <div className="hidden md:block w-full">
-        <Navbar />
-      </div>
-      {/* Sidebar: show only on mobile */}
-      <div className="block md:hidden fixed z-[60] top-0 left-0">
+      {/* Mobile sidebar trigger button */}
+      <div className="md:hidden fixed top-3 left-3 z-50">
         <AppSidebar />
       </div>
+      {/* Top navbar (hidden on mobile) */}
+      <Navbar />
       <div className="flex flex-col min-h-screen bg-background">
-        <HeroSection />
-        <div className="flex-1 w-full max-w-7xl mx-auto px-4 sm:px-8">
+        <main className="flex-1 w-full max-w-7xl mx-auto px-2 xs:px-4 sm:px-8 pt-4 md:pt-0">
+          <HeroSection />
           <WhatWeDoSection />
           <TeamSection />
           <ContactForm />
-        </div>
+        </main>
         <Footer />
         <BackToHomeButton />
       </div>
