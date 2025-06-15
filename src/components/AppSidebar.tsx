@@ -1,4 +1,4 @@
-import { Home, Rocket, Sparkles, Users2 } from "lucide-react";
+import { Home, Rocket, Sparkles } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 import {
   Sidebar,
@@ -37,7 +37,7 @@ function AppSidebar() {
   const collapsed = state === "collapsed";
   const currentPath = location.pathname;
 
-  // Always keep "Main" group open for simplicity
+  // Always keep "Main" group open for simplicity (do NOT pass open prop)
   return (
     <Sidebar
       className="block md:hidden min-h-screen z-50 w-60"
@@ -47,7 +47,7 @@ function AppSidebar() {
       {/* Always-visible menu trigger (mini mode) */}
       <SidebarTrigger className="m-2 self-end" />
       <SidebarContent>
-        <SidebarGroup open>
+        <SidebarGroup>
           <SidebarGroupLabel className="pl-2 pt-3 pb-1 text-xs text-muted-foreground tracking-wide">Main</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
