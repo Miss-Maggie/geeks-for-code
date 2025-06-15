@@ -1,3 +1,4 @@
+
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Rocket, Home } from "lucide-react";
 import { Switch } from "@/components/ui/switch";
@@ -14,7 +15,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="hidden md:block w-full bg-white dark:bg-[#171823] shadow sticky top-0 z-30">
+    <nav className="w-full bg-white dark:bg-[#171823] shadow sticky top-0 z-30">
       <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-2 xs:px-4 sm:px-8 py-3 xs:py-4">
         <div className="flex items-center gap-2 xs:gap-3">
           <Link to="/" className="flex items-center" aria-label="Home">
