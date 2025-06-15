@@ -8,9 +8,6 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarTrigger,
-  SidebarProvider,
-  useSidebar,
 } from "@/components/ui/sidebar";
 import { Home, Rocket } from "lucide-react";
 import { NavLink } from "react-router-dom";
@@ -21,9 +18,9 @@ const navLinks = [
   { label: "Contact", to: "#contact", icon: Rocket },
 ];
 
-export function AppSidebar({ open, setOpen }: { open: boolean; setOpen: (val: boolean) => void }) {
+export function AppSidebar() {
   return (
-    <Sidebar open={open} collapsible="offcanvas" className="md:hidden fixed z-40">
+    <Sidebar collapsible="offcanvas" className="md:hidden fixed z-40">
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Navigation</SidebarGroupLabel>
@@ -31,7 +28,7 @@ export function AppSidebar({ open, setOpen }: { open: boolean; setOpen: (val: bo
             <SidebarMenu>
               {navLinks.map(link => (
                 <SidebarMenuItem key={link.to}>
-                  <SidebarMenuButton asChild onClick={() => setOpen(false)}>
+                  <SidebarMenuButton asChild>
                     {
                       link.to.startsWith("#") ? (
                         <a
@@ -58,8 +55,6 @@ export function AppSidebar({ open, setOpen }: { open: boolean; setOpen: (val: bo
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
-      {/* Optional: Add close/trigger button if desired */}
     </Sidebar>
   );
 }
-

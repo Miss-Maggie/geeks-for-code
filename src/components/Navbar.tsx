@@ -1,4 +1,3 @@
-
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Rocket, Home, Menu } from "lucide-react";
 import { Switch } from "@/components/ui/switch";
@@ -103,4 +102,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
