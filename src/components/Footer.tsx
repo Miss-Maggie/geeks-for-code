@@ -3,11 +3,18 @@ const Footer = () => (
   <footer className="w-full py-6 border-t border-gray-100 mt-12 flex flex-col items-center bg-white">
     <nav className="flex gap-8 mb-3">
       <a
-        href="#"
+        href="/"
         className="text-[#070A52] font-bold story-link hover-scale transition"
         style={{ textDecoration: 'none' }}
       >
         Home
+      </a>
+      <a
+        href="/services"
+        className="text-[#070A52] font-bold story-link hover-scale transition"
+        style={{ textDecoration: 'none' }}
+      >
+        Services
       </a>
       <a
         href="#contact"
