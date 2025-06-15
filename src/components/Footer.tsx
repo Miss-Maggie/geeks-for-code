@@ -1,7 +1,7 @@
 
 const Footer = () => (
-  <footer className="w-full py-6 border-t border-gray-100 mt-12 flex flex-col items-center bg-white dark:bg-[#171823]">
-    <nav className="flex gap-8 mb-3">
+  <footer className="w-full py-6 border-t border-gray-100 mt-12 flex flex-col items-center bg-white dark:bg-[#171823] px-2 sm:px-0">
+    <nav className="flex flex-wrap gap-4 sm:gap-8 mb-3 justify-center text-center">
       <a
         href="/"
         className="font-bold story-link hover-scale transition text-primary dark:text-white"
@@ -31,7 +31,7 @@ const Footer = () => (
         Email Us
       </a>
     </nav>
-    <p className="text-sm text-muted-foreground">
+    <p className="text-sm text-muted-foreground text-center">
       © {new Date().getFullYear()} Geeks for Code. All rights reserved.
     </p>
   </footer>
