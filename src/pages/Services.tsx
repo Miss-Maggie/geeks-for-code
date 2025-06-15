@@ -37,19 +37,17 @@ const scrollToContact = () => {
 };
 
 const Services = () => (
-  <main className="min-h-screen bg-[#edeef5] dark:bg-[#191b24] pt-9 pb-16 px-2 xs:px-3 sm:px-4">
-    <div className="max-w-3xl mx-auto text-center mb-14 px-2 sm:px-4">
-      <h1 className="text-3xl xs:text-4xl font-extrabold text-primary dark:text-white mb-3">
-        Our Services
-      </h1>
-      <p className="text-base xs:text-lg text-muted-foreground mb-6">
+  <main className="min-h-screen bg-[#edeef5] dark:bg-[#191b24] pt-9 pb-16 px-4">
+    <div className="max-w-3xl mx-auto text-center mb-14">
+      <h1 className="text-4xl font-extrabold text-primary dark:text-white mb-3">Our Services</h1>
+      <p className="text-lg text-muted-foreground mb-6">
         At <span className="font-semibold text-primary dark:text-white">Geeks for Code</span>, we do more than just build websites!
       </p>
-      <p className="text-sm xs:text-base text-muted-foreground">
+      <p className="text-base text-muted-foreground">
         Need a modern website, a new app, or help automating your workflow? <span className="font-bold text-primary dark:text-white">Request help today</span> and collaborate with our group of talented developers to get your coding, development, or assignment challenges solved. <br />
         Our group of 10 skilled members can assist with:
       </p>
-      <ul className="list-disc text-left text-sm xs:text-base text-primary dark:text-white font-medium mt-5 ml-4 xs:ml-8">
+      <ul className="list-disc text-left text-base text-primary dark:text-white font-medium mt-5 ml-8">
         <li>Website and portfolio creation</li>
         <li>Custom web and mobile apps</li>
         <li>UI/UX improvements</li>
@@ -57,28 +55,26 @@ const Services = () => (
         <li>Coursework, assignments, and mentoring</li>
         <li>Debugging, code reviews, and more!</li>
       </ul>
-      <p className="text-sm xs:text-base text-muted-foreground mt-8">
+      <p className="text-base text-muted-foreground mt-8">
         To request help, just scroll down and fill out the contact form, or click the button below. We'll get back to you fast!
       </p>
     </div>
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 xs:gap-9 max-w-5xl mx-auto px-2">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-9 max-w-5xl mx-auto">
       {services.map((service) => (
         <div
           key={service.title}
-          className="bg-white dark:bg-[#232437] rounded-xl border border-gray-100 dark:border-[#323247] shadow-md p-5 xs:p-7 flex flex-col items-center hover:shadow-lg transition"
+          className="bg-white dark:bg-[#232437] rounded-xl border border-gray-100 dark:border-[#323247] shadow-md p-8 flex flex-col items-center hover:shadow-lg transition"
         >
           <div className="text-primary dark:text-white">{service.icon}</div>
-          <h3 className="mt-4 mb-2 text-lg xs:text-2xl font-bold text-primary dark:text-white text-center">
-            {service.title}
-          </h3>
-          <p className="text-muted-foreground text-center text-sm xs:text-base">{service.desc}</p>
+          <h3 className="mt-4 mb-2 text-2xl font-bold text-primary dark:text-white">{service.title}</h3>
+          <p className="text-muted-foreground text-center">{service.desc}</p>
         </div>
       ))}
     </div>
-    <div className="text-center mt-12 xs:mt-14">
+    <div className="text-center mt-14">
       <button
         onClick={scrollToContact}
-        className="inline-block px-6 xs:px-8 py-3 rounded-lg font-medium bg-primary text-primary-foreground text-base xs:text-lg shadow-lg story-link hover-scale transition-all focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+        className="inline-block px-8 py-3 rounded-lg font-medium bg-primary text-primary-foreground text-lg shadow-lg story-link hover-scale transition-all focus:ring-2 focus:ring-offset-2 focus:ring-primary"
         style={{ textDecoration: 'none' }}
       >
         Request Help Now
