@@ -1,95 +1,78 @@
-import { Home, Rocket, Sparkles, Users2 } from "lucide-react";
+
+import { Home, BookOpen, MessageSquare } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 import {
   Sidebar,
   SidebarContent,
-  SidebarTrigger,
-  SidebarMenu,
-  SidebarMenuItem,
-  SidebarMenuButton,
   SidebarGroup,
-  SidebarGroupLabel,
   SidebarGroupContent,
+  SidebarGroupLabel,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
+  SidebarTrigger,
   useSidebar,
 } from "@/components/ui/sidebar";
 
 const navItems = [
-  {
-    title: "Home",
-    url: "/",
-    icon: Home,
-  },
-  {
-    title: "Services",
-    url: "/services",
-    icon: Rocket,
-  },
-  {
-    title: "Contact",
-    url: "#contact",
-    icon: Sparkles,
-  },
+  { title: "Home", url: "/", icon: Home },
+  { title: "Services", url: "/services", icon: BookOpen },
+  { title: "Contact", url: "#contact", icon: MessageSquare },
 ];
 
-function AppSidebar() {
+export default function AppSidebar() {
   const { state } = useSidebar();
   const location = useLocation();
-  const collapsed = state === "collapsed";
   const currentPath = location.pathname;
 
-  // Always keep "Main" group open for simplicity
+  const isActive = (path: string) =>
+    path === "#contact"
+      ? window.location.hash === "#contact" || currentPath === "/" // treat as active on index with #contact
+      : currentPath === path;
+  const isExpanded = navItems.some((item) => isActive(item.url));
+
   return (
     <Sidebar
-      className="block md:hidden min-h-screen z-50 w-60"
-      collapsible
-      variant="sidebar"
+      className={`fixed top-0 left-0 h-screen z-40 bg-white dark:bg-[#171823] w-64 max-w-full transition-all duration-200 md:hidden`}
+      style={{ boxShadow: state === "expanded" ? "0 0 12px rgba(0,0,0,.12)" : "none" }}
     >
-      {/* Always-visible menu trigger (mini mode) */}
       <SidebarTrigger className="m-2 self-end" />
       <SidebarContent>
-        <SidebarGroup open>
-          <SidebarGroupLabel className="pl-2 pt-3 pb-1 text-xs text-muted-foreground tracking-wide">Main</SidebarGroupLabel>
+        <SidebarGroup open={isExpanded}>
+          <SidebarGroupLabel>Main</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {navItems.map((item) => (
-                <SidebarMenuItem key={item.url}>
+                <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
                     {item.url.startsWith("#") ? (
                       <a
                         href={item.url}
-                        className="flex items-center px-3 py-2 rounded hover:bg-muted/50 text-primary dark:text-white font-semibold"
-                        style={{ textDecoration: "none" }}
-                        onClick={(e) => {
-                          e.preventDefault();
-                          // Only scroll if on homepage, else go to home
-                          if (location.pathname !== "/") {
-                            window.location.href = "/#contact";
-                          } else {
-                            const contact = document.getElementById("contact");
-                            if (contact) {
-                              contact.scrollIntoView({ behavior: "smooth" });
-                            }
+                        className={`flex items-center px-3 py-2 rounded w-full text-primary dark:text-white hover:bg-primary/10 transition
+                          ${isActive(item.url) ? "bg-primary/10 font-bold" : ""}
+                        `}
+                        onClick={() => {
+                          // smooth scroll to contact
+                          if (item.url === "#contact") {
+                            const el = document.getElementById("contact");
+                            if (el) el.scrollIntoView({ behavior: "smooth" });
                           }
                         }}
                       >
                         <item.icon className="mr-2 h-5 w-5" />
-                        {!collapsed && <span>{item.title}</span>}
+                        <span>{item.title}</span>
                       </a>
                     ) : (
                       <NavLink
                         to={item.url}
                         end
                         className={({ isActive }) =>
-                          `flex items-center px-3 py-2 rounded ${
-                            isActive
-                              ? "bg-primary text-white"
-                              : "hover:bg-muted/50 text-primary dark:text-white"
-                          } font-semibold`
+                          `flex items-center px-3 py-2 rounded w-full
+                           ${isActive ? "bg-primary/10 font-bold" : ""}`
                         }
-                        style={{ textDecoration: "none" }}
                       >
                         <item.icon className="mr-2 h-5 w-5" />
-                        {!collapsed && <span>{item.title}</span>}
+                        <span>{item.title}</span>
                       </NavLink>
                     )}
                   </SidebarMenuButton>
@@ -102,4 +85,3 @@ function AppSidebar() {
     </Sidebar>
   );
 }
-export default AppSidebar;
