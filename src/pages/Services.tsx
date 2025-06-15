@@ -28,8 +28,23 @@ const Services = () => (
   <main className="min-h-screen bg-background pt-9 pb-16 px-4">
     <div className="max-w-3xl mx-auto text-center mb-14">
       <h1 className="text-4xl font-extrabold text-[#070A52] mb-3">Our Services</h1>
-      <p className="text-lg text-muted-foreground">
-        At <span className="font-semibold text-[#070A52]">Geeks for Code</span>, our team can help you with website creation, app development, and all sorts of coding or automation challenges. Whether you’re building your first site or scaling your app, we can lend a hand!
+      <p className="text-lg text-muted-foreground mb-6">
+        At <span className="font-semibold text-[#070A52]">Geeks for Code</span>, we do more than just build websites!
+      </p>
+      <p className="text-base text-muted-foreground">
+        Need a modern website, a new app, or help automating your workflow? <span className="font-bold text-[#070A52]">Request help today</span> and collaborate with our group of talented developers to get your coding, development, or assignment challenges solved. <br />
+        Our group of 10 skilled members can assist with:
+      </p>
+      <ul className="list-disc text-left text-base text-[#070A52] font-medium mt-5 ml-8">
+        <li>Website and portfolio creation</li>
+        <li>Custom web and mobile apps</li>
+        <li>UI/UX improvements</li>
+        <li>APIs & integrations</li>
+        <li>Coursework, assignments, and mentoring</li>
+        <li>Debugging, code reviews, and more!</li>
+      </ul>
+      <p className="text-base text-muted-foreground mt-8">
+        To request help, just scroll down and fill out the contact form, or click the button below. We'll get back to you fast!
       </p>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-9 max-w-5xl mx-auto">

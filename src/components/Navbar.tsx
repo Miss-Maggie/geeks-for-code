@@ -1,6 +1,6 @@
 
 import { Link, NavLink } from "react-router-dom";
-import { Rocket } from "lucide-react";
+import { Rocket, Home } from "lucide-react";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -11,10 +11,15 @@ const navLinks = [
 const Navbar = () => (
   <nav className="w-full bg-white shadow sticky top-0 z-30">
     <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
-      <Link to="/" className="flex items-center gap-2 text-[#070A52] font-extrabold text-2xl tracking-tight">
-        <Rocket size={32} color="#070A52" className="mr-1" />
-        Geeks for Code
-      </Link>
+      <div className="flex items-center gap-3">
+        <Link to="/" className="flex items-center" aria-label="Home">
+          <Home size={28} color="#070A52" className="hover:scale-110 transition" />
+        </Link>
+        <Link to="/" className="flex items-center gap-2 text-[#070A52] font-extrabold text-2xl tracking-tight">
+          <Rocket size={32} color="#070A52" className="mr-1" />
+          Geeks for Code
+        </Link>
+      </div>
       <ul className="flex space-x-8">
         {navLinks.map((link) => (
           <li key={link.to}>
