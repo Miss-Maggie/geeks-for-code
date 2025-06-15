@@ -16,23 +16,23 @@ const Navbar = () => {
 
   return (
     <nav className="w-full bg-white dark:bg-[#171823] shadow sticky top-0 z-30">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
-        <div className="flex items-center gap-3">
+      <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-2 xs:px-4 sm:px-8 py-3 xs:py-4">
+        <div className="flex items-center gap-2 xs:gap-3">
           <Link to="/" className="flex items-center" aria-label="Home">
-            <Home size={28} className="text-primary dark:text-white hover:scale-110 transition" />
+            <Home size={24} xs-size={28} className="text-primary dark:text-white hover:scale-110 transition" />
           </Link>
-          <Link to="/" className="flex items-center gap-2 font-extrabold text-2xl tracking-tight text-primary dark:text-white">
-            <Rocket size={32} className="text-primary dark:text-white mr-1" />
+          <Link to="/" className="flex items-center gap-1 xs:gap-2 font-extrabold text-xl xs:text-2xl tracking-tight text-primary dark:text-white">
+            <Rocket size={24} xs-size={32} className="text-primary dark:text-white mr-1" />
             Geeks for Code
           </Link>
         </div>
-        <ul className="flex space-x-8">
+        <ul className="flex space-x-4 xs:space-x-8 text-base xs:text-lg overflow-x-auto max-w-full">
           {navLinks.map((link) => (
             <li key={link.to}>
               {link.to.startsWith("#") ? (
                 <a
                   href={link.to}
-                  className="text-primary dark:text-white px-4 py-2 rounded transition font-semibold hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-primary"
+                  className="text-primary dark:text-white px-2 xs:px-4 py-2 rounded transition font-semibold hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-primary"
                   style={{ textDecoration: "none" }}
                   onClick={(e) => {
                     // If not home page, navigate home and scroll to contact
@@ -55,7 +55,7 @@ const Navbar = () => {
                 <NavLink
                   to={link.to}
                   className={({ isActive }) =>
-                    `px-4 py-2 rounded font-semibold transition ${
+                    `px-2 xs:px-4 py-2 rounded font-semibold transition ${
                       isActive
                         ? "bg-primary text-primary-foreground"
                         : "text-primary dark:text-white hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-primary"
@@ -70,7 +70,7 @@ const Navbar = () => {
           ))}
         </ul>
         {/* Theme Toggle */}
-        <div className="ml-4 flex items-center">
+        <div className="ml-2 xs:ml-4 flex items-center">
           <span className="text-xs text-muted-foreground mr-1">🌞</span>
           <Switch
             checked={theme === "dark"}
