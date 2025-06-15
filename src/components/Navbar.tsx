@@ -19,10 +19,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
         <div className="flex items-center gap-3">
           <Link to="/" className="flex items-center" aria-label="Home">
-            <Home size={28} color="#070A52" className="hover:scale-110 transition" />
+            <Home size={28} className="text-primary dark:text-white hover:scale-110 transition" />
           </Link>
-          <Link to="/" className="flex items-center gap-2 text-[#070A52] font-extrabold text-2xl tracking-tight">
-            <Rocket size={32} color="#070A52" className="mr-1" />
+          <Link to="/" className="flex items-center gap-2 font-extrabold text-2xl tracking-tight text-primary dark:text-white">
+            <Rocket size={32} className="text-primary dark:text-white mr-1" />
             Geeks for Code
           </Link>
         </div>
@@ -32,7 +32,7 @@ const Navbar = () => {
               {link.to.startsWith("#") ? (
                 <a
                   href={link.to}
-                  className="text-[#070A52] px-4 py-2 rounded transition font-semibold hover:bg-[#070A52] hover:text-white"
+                  className="text-primary dark:text-white px-4 py-2 rounded transition font-semibold hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-primary"
                   style={{ textDecoration: "none" }}
                   onClick={(e) => {
                     // If not home page, navigate home and scroll to contact
@@ -55,8 +55,10 @@ const Navbar = () => {
                 <NavLink
                   to={link.to}
                   className={({ isActive }) =>
-                    `text-[#070A52] px-4 py-2 rounded font-semibold transition hover:bg-[#070A52] hover:text-white ${
-                      isActive ? "bg-[#070A52] text-white" : ""
+                    `px-4 py-2 rounded font-semibold transition ${
+                      isActive
+                        ? "bg-primary text-primary-foreground"
+                        : "text-primary dark:text-white hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-primary"
                     }`
                   }
                   style={{ textDecoration: "none" }}

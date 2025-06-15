@@ -1,31 +1,31 @@
 
 const Footer = () => (
-  <footer className="w-full py-6 border-t border-gray-100 mt-12 flex flex-col items-center bg-white">
+  <footer className="w-full py-6 border-t border-gray-100 mt-12 flex flex-col items-center bg-white dark:bg-[#171823]">
     <nav className="flex gap-8 mb-3">
       <a
         href="/"
-        className="text-[#070A52] font-bold story-link hover-scale transition"
+        className="font-bold story-link hover-scale transition text-primary dark:text-white"
         style={{ textDecoration: 'none' }}
       >
         Home
       </a>
       <a
         href="/services"
-        className="text-[#070A52] font-bold story-link hover-scale transition"
+        className="font-bold story-link hover-scale transition text-primary dark:text-white"
         style={{ textDecoration: 'none' }}
       >
         Services
       </a>
       <a
         href="#contact"
-        className="text-[#070A52] font-bold story-link hover-scale transition"
+        className="font-bold story-link hover-scale transition text-primary dark:text-white"
         style={{ textDecoration: 'none' }}
       >
         Contact
       </a>
       <a
         href="mailto:geeksforcode@example.com"
-        className="text-[#070A52] font-bold story-link hover-scale transition"
+        className="font-bold story-link hover-scale transition text-primary dark:text-white"
         style={{ textDecoration: 'none' }}
       >
         Email Us

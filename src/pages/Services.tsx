@@ -37,17 +37,17 @@ const scrollToContact = () => {
 };
 
 const Services = () => (
-  <main className="min-h-screen bg-[#f8f9fb] dark:bg-[#191b24] pt-9 pb-16 px-4">
+  <main className="min-h-screen bg-[#edeef5] dark:bg-[#191b24] pt-9 pb-16 px-4">
     <div className="max-w-3xl mx-auto text-center mb-14">
-      <h1 className="text-4xl font-extrabold text-[#070A52] dark:text-white mb-3">Our Services</h1>
+      <h1 className="text-4xl font-extrabold text-primary dark:text-white mb-3">Our Services</h1>
       <p className="text-lg text-muted-foreground mb-6">
-        At <span className="font-semibold text-[#070A52] dark:text-white">Geeks for Code</span>, we do more than just build websites!
+        At <span className="font-semibold text-primary dark:text-white">Geeks for Code</span>, we do more than just build websites!
       </p>
       <p className="text-base text-muted-foreground">
-        Need a modern website, a new app, or help automating your workflow? <span className="font-bold text-[#070A52] dark:text-white">Request help today</span> and collaborate with our group of talented developers to get your coding, development, or assignment challenges solved. <br />
+        Need a modern website, a new app, or help automating your workflow? <span className="font-bold text-primary dark:text-white">Request help today</span> and collaborate with our group of talented developers to get your coding, development, or assignment challenges solved. <br />
         Our group of 10 skilled members can assist with:
       </p>
-      <ul className="list-disc text-left text-base text-[#070A52] dark:text-white font-medium mt-5 ml-8">
+      <ul className="list-disc text-left text-base text-primary dark:text-white font-medium mt-5 ml-8">
         <li>Website and portfolio creation</li>
         <li>Custom web and mobile apps</li>
         <li>UI/UX improvements</li>
@@ -65,8 +65,8 @@ const Services = () => (
           key={service.title}
           className="bg-white dark:bg-[#232437] rounded-xl border border-gray-100 dark:border-[#323247] shadow-md p-8 flex flex-col items-center hover:shadow-lg transition"
         >
-          <div>{service.icon}</div>
-          <h3 className="mt-4 mb-2 text-2xl font-bold text-[#070A52] dark:text-white">{service.title}</h3>
+          <div className="text-primary dark:text-white">{service.icon}</div>
+          <h3 className="mt-4 mb-2 text-2xl font-bold text-primary dark:text-white">{service.title}</h3>
           <p className="text-muted-foreground text-center">{service.desc}</p>
         </div>
       ))}
@@ -74,7 +74,7 @@ const Services = () => (
     <div className="text-center mt-14">
       <button
         onClick={scrollToContact}
-        className="inline-block px-8 py-3 rounded-lg font-medium bg-[#070A52] text-white text-lg shadow-lg story-link hover-scale transition-all focus:ring-2 focus:ring-offset-2 focus:ring-[#070A52]"
+        className="inline-block px-8 py-3 rounded-lg font-medium bg-primary text-primary-foreground text-lg shadow-lg story-link hover-scale transition-all focus:ring-2 focus:ring-offset-2 focus:ring-primary"
         style={{ textDecoration: 'none' }}
       >
         Request Help Now
