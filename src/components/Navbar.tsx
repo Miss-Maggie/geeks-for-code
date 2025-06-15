@@ -1,4 +1,3 @@
-
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Rocket, Home } from "lucide-react";
 import { Switch } from "@/components/ui/switch";
@@ -14,8 +13,9 @@ const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
   const location = useLocation();
 
+  // Hide navbar on mobile (now handled by AppSidebar)
   return (
-    <nav className="w-full bg-white dark:bg-[#171823] shadow sticky top-0 z-30">
+    <nav className="w-full bg-white dark:bg-[#171823] shadow sticky top-0 z-30 md:flex hidden">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
         <div className="flex items-center gap-3">
           <Link to="/" className="flex items-center" aria-label="Home">

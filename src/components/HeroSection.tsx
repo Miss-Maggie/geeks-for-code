@@ -9,10 +9,10 @@ const HeroSection = () => (
     <div className="absolute right-8 top-8 opacity-30 pointer-events-none max-sm:hidden">
       <Sparkles size={70} className="text-primary dark:text-white" strokeWidth={1.5} />
     </div>
-    <h1 className="text-5xl font-extrabold mb-4 tracking-tight text-primary dark:text-white animate-fade-in">
+    <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 tracking-tight text-primary dark:text-white animate-fade-in text-center">
       Geeks for Code
     </h1>
-    <p className="max-w-2xl text-xl text-center text-muted-foreground mb-6">
+    <p className="max-w-2xl text-lg sm:text-xl text-center text-muted-foreground mb-6">
       <span className="font-semibold text-primary dark:text-white">10 passionate members</span> collaborating to learn, build, and help others with coding, assignments, and upskilling.
     </p>
     <div className="flex gap-6 mb-8">
