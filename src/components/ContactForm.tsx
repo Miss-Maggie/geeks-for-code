@@ -1,4 +1,3 @@
-
 import { useRef, useState } from "react";
 import { MailIcon, SendHorizonal } from "lucide-react";
 
@@ -50,7 +49,7 @@ const ContactForm = () => {
         />
         <button
           type="submit"
-          className="w-full bg-[#070A52] dark:bg-white text-white dark:text-primary px-5 py-2 rounded-md font-medium hover:scale-105 transition story-link flex items-center justify-center gap-2"
+          className="w-full bg-[#070A52] dark:bg-[#070A52] text-white px-5 py-2 rounded-md font-medium hover:scale-105 transition story-link flex items-center justify-center gap-2"
           disabled={sent}
         >
           {sent ? "Message Sent!" : (
