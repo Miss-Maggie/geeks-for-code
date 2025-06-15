@@ -41,7 +41,7 @@ function AppSidebar() {
   return (
     <Sidebar
       className="block md:hidden min-h-screen z-50 w-60"
-      collapsible
+      collapsible="offcanvas"
       variant="sidebar"
     >
       {/* Always-visible menu trigger (mini mode) */}
