@@ -86,7 +86,7 @@ const members = [
   },
   {
     salutation: "",
-    name: "Collins Kamau",
+    name: "Collins Maina",
     skill: "Frontend Engineer",
     profile: "./male.jpeg",
     github: "https://github.com/collins",

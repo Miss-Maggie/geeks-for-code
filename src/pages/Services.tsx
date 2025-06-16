@@ -5,12 +5,12 @@ import Footer from "@/components/Footer";
 const services = [
   {
     icon: <Globe size={34} />,
-    title: "Website Creation",
+    title: "Website & Management Systems Development",
     desc: "Custom, modern websites tailored to your needs—portfolio, blog, e-commerce and more.",
   },
   {
     icon: <Code2 size={34} />,
-    title: "Web & App Development",
+    title: "Android & iOS App Development",
     desc: "Full-stack app development: landing pages, business apps, learning tools, and more.",
   },
   {
@@ -61,7 +61,7 @@ const Services = () => (
         To request help, just scroll down and fill out the contact form, or click the button below. We'll get back to you fast!
       </p>
     </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-9 max-w-5xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-9 max-w-5xl text-center mx-auto">
       {services.map((service) => (
         <div
           key={service.title}

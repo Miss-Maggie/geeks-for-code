@@ -2,6 +2,7 @@
 import { Code2, Globe, Layers3, Database } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ProjectSection from "@/components/ProjectsMain";
 const services = [
   {
     icon: <Globe size={34} />,
@@ -42,31 +43,15 @@ const Projects = () => (
     <main className="min-h-screen bg-[#edeef5] dark:bg-[#191b24] pt-9 pb-16 px-4">
     <div className="max-w-3xl mx-auto text-center mb-14">
       <h1 className="text-4xl font-extrabold text-primary dark:text-white mb-3">Our Projects</h1>
-      <p className="text-lg text-muted-foreground mb-6">
-        <span className="font-semibold text-primary dark:text-white">Geeks for Code Portfolio</span>
-      </p>
     </div>
-     <h1 className="text-center text-6xl">Comming Soon </h1>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-9 max-w-5xl mx-auto">
-
-      {/* {services.map((service) => (
-        <div
-          key={service.title}
-          className="bg-white dark:bg-[#232437] rounded-xl border border-gray-100 dark:border-[#323247] shadow-md p-8 flex flex-col items-center hover:shadow-lg transition"
-        >
-          <div className="text-primary dark:text-white">{service.icon}</div>
-          <h3 className="mt-4 mb-2 text-2xl font-bold text-primary dark:text-white">{service.title}</h3>
-          <p className="text-muted-foreground text-center">{service.desc}</p>
-        </div>
-      ))} */}
-    </div>
+    <ProjectSection/>
     <div className="text-center mt-14">
       <button
         onClick={scrollToContact}
         className="inline-block px-8 py-3 rounded-lg font-medium bg-primary text-primary-foreground text-lg shadow-lg story-link hover-scale transition-all focus:ring-2 focus:ring-offset-2 focus:ring-primary"
         style={{ textDecoration: 'none' }}
       >
-        Request Help Now
+        Reach Out
       </button>
     </div>
   </main>

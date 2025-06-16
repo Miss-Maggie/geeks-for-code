@@ -1,5 +1,5 @@
 
-import { Brain, Users, GraduationCap, BookOpen } from "lucide-react";
+import { Brain, Users, GraduationCap, BookOpen , Rocket} from "lucide-react";
 
 const skills = [
   {
@@ -8,9 +8,9 @@ const skills = [
     desc: "Grow technical skills and embrace the latest in coding.",
   },
   {
-    icon: <BookOpen size={32} />,
-    title: "Assignment Help",
-    desc: "Members assist on coding assignments, projects, and exam prep.",
+    icon: <Rocket size={32} />,
+    title: "Development",
+    desc: "Providing Solutions to our clients and peers need by developing clean, scalable solutions.",
   },
   {
     icon: <Users size={32} />,
@@ -20,7 +20,7 @@ const skills = [
   {
     icon: <GraduationCap size={32}/>,
     title: "Peer Support",
-    desc: "Everyone helps each other to grow as coders—no question too simple!",
+    desc: "Offer assistance to fellow developers and contributing in open source and community initiatives!",
   },
 ];
 
