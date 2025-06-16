@@ -53,9 +53,9 @@ const members = [
     name: "Juliet Marcs",
     skill: "Frontend Engineer",
     profile: "./juliet.jpeg",
-    github: "https://github.com/juliet",
+    github: "https://github.com/juliet-03",
     linkedin: "https://linkedin.com/in/juliet",
-    email: "mailto:juliet@example.com",
+    email: "mailto:julimarc2021@gmail.com",
   },
   {
     salutation: "",
