@@ -25,7 +25,7 @@ const members = [
     salutation: "",
     name: "Vincent Odhiambo",
     skill: "Operations Engineer",
-    profile: "./male.jpeg",
+    profile: "./vin.png",
     github: "https://github.com/vincent",
     linkedin: "https://linkedin.com/in/vincent",
     email: "mailto:vincent@example.com",
