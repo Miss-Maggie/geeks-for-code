@@ -80,9 +80,9 @@ const members = [
     name: "Abel Sifuna",
     skill: "FullStack Engineer",
     profile: "./abel.jpeg",
-    github: "https://github.com/abel",
-    linkedin: "https://linkedin.com/in/abel",
-    email: "mailto:abel@example.com",
+    github: "https://github.com/Cfuna22",
+    linkedin: "https://www.linkedin.com/in/abel-sifuna-b0a928353",
+    email: "mailto:abelsifuna51@gmail.com",
   },
   {
     salutation: "",
