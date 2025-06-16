@@ -59,7 +59,7 @@ const members = [
   },
   {
     salutation: "",
-    name: "Hazzel Mochogo",
+    name: "Hazzel Mochoge",
     skill: "Cloud Engineer",
     profile: "./hazzel.jpeg",
     github: "https://github.com/hazzel",
