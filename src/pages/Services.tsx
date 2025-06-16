@@ -1,7 +1,7 @@
 
 import { Code2, Globe, Layers3, Database } from "lucide-react";
-import BackToHomeButton from "@/components/BackToHomeButton";
-
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 const services = [
   {
     icon: <Globe size={34} color="#070A52" />,
@@ -37,7 +37,9 @@ const scrollToContact = () => {
 };
 
 const Services = () => (
-  <main className="min-h-screen bg-[#edeef5] dark:bg-[#191b24] pt-9 pb-16 px-4">
+  <>
+   <Navbar />
+    <main className="min-h-screen bg-[#edeef5] dark:bg-[#191b24] pt-9 pb-16 px-4">
     <div className="max-w-3xl mx-auto text-center mb-14">
       <h1 className="text-4xl font-extrabold text-primary dark:text-white mb-3">Our Services</h1>
       <p className="text-lg text-muted-foreground mb-6">
@@ -80,8 +82,11 @@ const Services = () => (
         Request Help Now
       </button>
     </div>
-    <BackToHomeButton />
   </main>
+
+  <Footer />
+  </>
+
 );
 
 export default Services;

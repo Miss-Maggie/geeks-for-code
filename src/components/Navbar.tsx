@@ -6,7 +6,7 @@ import { useTheme } from "@/hooks/useTheme";
 const navLinks = [
   { label: "Home", to: "/" },
   { label: "Services", to: "/services" },
-  { label: "Contact", to: "#contact" },
+  { label: "Contact", to: "/contact" },
 ];
 
 const Navbar = () => {
@@ -17,9 +17,6 @@ const Navbar = () => {
     <nav className="w-full bg-white dark:bg-[#171823] shadow sticky top-0 z-30">
       <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 sm:px-6 md:px-8 py-4">
         <div className="flex items-center gap-3">
-          <Link to="/" className="flex items-center" aria-label="Home">
-            <Home size={28} className="text-primary dark:text-white hover:scale-110 transition" />
-          </Link>
           <Link to="/" className="flex items-center gap-2 font-extrabold text-2xl tracking-tight text-primary dark:text-white">
             <Rocket size={32} className="text-primary dark:text-white mr-1" />
             Geeks for Code

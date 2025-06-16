@@ -2,16 +2,16 @@
 import { Crown } from "lucide-react";
 
 const members = [
-  { salutation: "Mr", name: "Lewis Okoth", role: "Leader" },
-  { salutation: "Mr", name: "Vincent Odhiambo" },
-  { salutation: "Miss", name: "Magdaline Muthui" },
-  { salutation: "Mr", name: "Protas Junior" },
-  { salutation: "Miss", name: "Juliet Marcs" },
-  { salutation: "Miss", name: "Hazzel Mochogo" },
-  { salutation: "Miss", name: "Mary Wangari" },
-  { salutation: "Mr", name: "Abel Sifuna" },
-  { salutation: "Mr", name: "Collins Kamau" },
-  { salutation: "Miss", name: "Yvonna shiala" },
+  { salutation: "Mr", name: "Ephesians Lewis", role: "Leader", skill: "Backend Engineer" },
+  { salutation: "Mr", name: "Vincent Odhiambo", skill: "Operations Engineer" },
+  { salutation: "Miss", name: "Magdaline Muthui", skill: "Frontend Engineer" },
+  { salutation: "Mr", name: "Protas Junior", skill: "FullStack Engineer" },
+  { salutation: "Miss", name: "Juliet Marcs", skill: "Frontend Engineer" },
+  { salutation: "Miss", name: "Hazzel Mochogo", skill: "Clound Engineer" },
+  { salutation: "Miss", name: "Mary Wangari", skill: "Frontend  Engineer" },
+  { salutation: "Mr", name: "Abel Sifuna", skill: "FullStack Engineer" },
+  { salutation: "Mr", name: "Collins Kamau", skill: "Frontend Engineer" },
+  { salutation: "Miss", name: "Yvonna shiala", skill: "Frontend Engineer" },
 ];
 
 const TeamSection = () => (
@@ -38,8 +38,9 @@ const TeamSection = () => (
               <Crown size={16} className="inline" /> Leader
             </span>
           ) : (
-            <span className="text-xs text-muted-foreground dark:text-gray-300">Member</span>
+            <span className="text-xs text-primary dark:text-gray-300 font-semibold uppercase">Member</span>
           )}
+          <span className="text-xs text-primary dark:text-gray-300">{member.skill}</span>
         </div>
       ))}
     </div>
