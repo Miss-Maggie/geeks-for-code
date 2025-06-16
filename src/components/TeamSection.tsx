@@ -8,7 +8,7 @@ const members = [
   { salutation: "", name: "Protas Junior", skill: "FullStack Engineer" , profile:'./male.jpeg'},
   { salutation: "", name: "Juliet Marcs", skill: "Frontend Engineer", profile:'./female.jpeg' },
   { salutation: "", name: "Hazzel Mochogo", skill: "Clound Engineer", profile:'./female.jpeg' },
-  { salutation: "", name: "Mary Wangari", skill: "Frontend  Engineer", profile:'./female.jpeg' },
+  { salutation: "", name: "Mary Wangari", skill: "Frontend  Engineer", profile:'./mary.jpeg' },
   { salutation: "", name: "Abel Sifuna", skill: "FullStack Engineer" , profile:'./male.jpeg'},
   { salutation: "", name: "Collins Kamau", skill: "Frontend Engineer", profile:'./male.jpeg' },
   { salutation: "", name: "Yvonna shiala", skill: "Frontend Engineer", profile:'./shiala.jpeg' },
