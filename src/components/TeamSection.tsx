@@ -52,7 +52,7 @@ const members = [
     salutation: "",
     name: "Juliet Marcs",
     skill: "Frontend Engineer",
-    profile: "./female.jpeg",
+    profile: "./juliet.jpeg",
     github: "https://github.com/juliet",
     linkedin: "https://linkedin.com/in/juliet",
     email: "mailto:juliet@example.com",

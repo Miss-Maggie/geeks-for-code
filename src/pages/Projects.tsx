@@ -3,6 +3,7 @@ import { Code2, Globe, Layers3, Database } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ProjectSection from "@/components/ProjectsMain";
+import { Link } from "react-router-dom";
 const services = [
   {
     icon: <Globe size={34} />,
@@ -26,16 +27,6 @@ const services = [
   },
 ];
 
-const scrollToContact = () => {
-  // Try to scroll to contact form if on home
-  const contact = document.getElementById("contact");
-  if (contact) {
-    contact.scrollIntoView({ behavior: "smooth" });
-  } else {
-    // Navigate to home with hash
-    window.location.href = "/contact";
-  }
-};
 
 const Projects = () => (
   <>
@@ -46,13 +37,13 @@ const Projects = () => (
     </div>
     <ProjectSection/>
     <div className="text-center mt-14">
-      <button
-        onClick={scrollToContact}
+      <Link
+        to='/contact'
         className="inline-block px-8 py-3 rounded-lg font-medium bg-primary text-primary-foreground text-lg shadow-lg story-link hover-scale transition-all focus:ring-2 focus:ring-offset-2 focus:ring-primary"
         style={{ textDecoration: 'none' }}
       >
         Reach Out
-      </button>
+      </Link>
     </div>
   </main>
 
