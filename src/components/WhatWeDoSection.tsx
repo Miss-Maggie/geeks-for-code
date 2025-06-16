@@ -3,22 +3,22 @@ import { Brain, Users, GraduationCap, BookOpen } from "lucide-react";
 
 const skills = [
   {
-    icon: <Brain size={32} color="#070A52" />,
+    icon: <Brain size={32} />,
     title: "Upskilling",
     desc: "Grow technical skills and embrace the latest in coding.",
   },
   {
-    icon: <BookOpen size={32} color="#070A52" />,
+    icon: <BookOpen size={32} />,
     title: "Assignment Help",
     desc: "Members assist on coding assignments, projects, and exam prep.",
   },
   {
-    icon: <Users size={32} color="#070A52" />,
+    icon: <Users size={32} />,
     title: "Collaboration",
     desc: "Team up on real-world projects—learn and ship together.",
   },
   {
-    icon: <GraduationCap size={32} color="#070A52" />,
+    icon: <GraduationCap size={32}/>,
     title: "Peer Support",
     desc: "Everyone helps each other to grow as coders—no question too simple!",
   },

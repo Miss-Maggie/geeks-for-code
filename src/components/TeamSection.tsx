@@ -27,7 +27,7 @@ const TeamSection = () => (
               : "border-gray-200 dark:border-[#323247]"
           } animate-fade-in`}
         >
-          <div className="bg-primary dark:bg-white text-white dark:text-primary rounded-full w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center mb-3 text-2xl sm:text-3xl font-bold shadow-sm">
+          <div className="bg-primary dark:bg-secondary text-white dark:text-primary rounded-full w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center mb-3 text-2xl sm:text-3xl font-bold shadow-sm">
             {member.name.split(" ").map((w) => w[0]).join("")}
           </div>
           <span className="font-medium text-base sm:text-lg mb-1 text-primary dark:text-white text-center">

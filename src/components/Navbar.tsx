@@ -118,8 +118,8 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     `px-4 py-2 rounded font-semibold transition ${
                       isActive
-                        ? "bg-primary text-white"
-                        : "text-primary dark:text-white hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-primary"
+                        ? "bg-primary text-background"
+                        : "text-primary dark:text-white hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-background"
                     }`
                   }
                 >
