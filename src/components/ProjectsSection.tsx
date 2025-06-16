@@ -39,7 +39,8 @@ const ProjectSection = () => {
       <h2 className="text-2xl sm:text-3xl font-semibold text-primary dark:text-white text-center mb-6 sm:mb-8">
         Featured Projects
       </h2>
-      <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 justify-center">
+      <h1 className="text-3xl text-center font-extrabold">Comming Soon</h1>
+      {/* <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 justify-center">
         {projects.map((project) => (
           <Dialog key={project.title}>
             <DialogTrigger asChild>
@@ -94,7 +95,7 @@ const ProjectSection = () => {
             </DialogContent>
           </Dialog>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };

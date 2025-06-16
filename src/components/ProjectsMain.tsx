@@ -36,7 +36,8 @@ const projects = [
 const ProjectSection = () => {
   return (
     <section className="my-12 sm:my-20">
-      <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 justify-center">
+      <h1 className="text-3xl text-center font-extrabold">Comming Soon</h1>
+      {/* <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 justify-center">
         {projects.map((project) => (
           <Dialog key={project.title}>
             <DialogTrigger asChild>
@@ -91,7 +92,7 @@ const ProjectSection = () => {
             </DialogContent>
           </Dialog>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };
