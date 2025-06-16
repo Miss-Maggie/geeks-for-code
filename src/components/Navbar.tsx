@@ -105,8 +105,9 @@ const Navbar = () => {
             to="/"
             className="flex items-center gap-2 font-extrabold text-xl sm:text-2xl tracking-tight text-primary dark:text-white"
           >
-            <Rocket size={28} className="text-primary dark:text-white" />
-            Geeks for Code
+            <img src="./logo-1.png" alt="" className="block dark:hidden" />
+            <img src="./logo-1-bg.png" alt="" className="hidden dark:block" />
+            <span className="pt-3 text-2xl font-extrabold"> Geeks For Code<br /><sup className="pt-[-10%] text-lg font-bold">Code.Create.Connet</sup></span>
           </Link>
 
           {/* Desktop Nav Links */}
