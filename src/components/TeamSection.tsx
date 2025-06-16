@@ -31,7 +31,7 @@ const TeamSection = () => (
             <img src={member.profile} className="rounded-full w-28 h-28 sm:w-28 sm:h-28" alt={member.name} />
           </div>
           <span className="font-medium text-base sm:text-lg mb-1 text-primary dark:text-white text-center">
-            {member.salutation}. {member.name}
+            {member.salutation} {member.name}
           </span>
           {member.role === "Leader" ? (
             <span className="flex items-center gap-1 text-xs sm:text-sm text-primary dark:text-white font-semibold uppercase">
