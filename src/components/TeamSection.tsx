@@ -2,16 +2,16 @@
 import { Crown } from "lucide-react";
 
 const members = [
-  { salutation: "Mr", name: "Ephesians Lewis", role: "Leader", skill: "Backend Engineer" },
-  { salutation: "Mr", name: "Vincent Odhiambo", skill: "Operations Engineer" },
-  { salutation: "Miss", name: "Magdaline Muthui", skill: "Frontend Engineer" },
-  { salutation: "Mr", name: "Protas Junior", skill: "FullStack Engineer" },
-  { salutation: "Miss", name: "Juliet Marcs", skill: "Frontend Engineer" },
-  { salutation: "Miss", name: "Hazzel Mochogo", skill: "Clound Engineer" },
-  { salutation: "Miss", name: "Mary Wangari", skill: "Frontend  Engineer" },
-  { salutation: "Mr", name: "Abel Sifuna", skill: "FullStack Engineer" },
-  { salutation: "Mr", name: "Collins Kamau", skill: "Frontend Engineer" },
-  { salutation: "Miss", name: "Yvonna shiala", skill: "Frontend Engineer" },
+  { salutation: "Mr", name: "Ephesians Lewis", role: "Leader", skill: "Backend Engineer", profile:'./power.png' },
+  { salutation: "Mr", name: "Vincent Odhiambo", skill: "Operations Engineer", profile:'./male.jpeg' },
+  { salutation: "Miss", name: "Magdaline Muthui", skill: "Frontend Engineer", profile:'./female.jpeg' },
+  { salutation: "Mr", name: "Protas Junior", skill: "FullStack Engineer" , profile:'./male.jpeg'},
+  { salutation: "Miss", name: "Juliet Marcs", skill: "Frontend Engineer", profile:'./female.jpeg' },
+  { salutation: "Miss", name: "Hazzel Mochogo", skill: "Clound Engineer", profile:'./female.jpeg' },
+  { salutation: "Miss", name: "Mary Wangari", skill: "Frontend  Engineer", profile:'./female.jpeg' },
+  { salutation: "Mr", name: "Abel Sifuna", skill: "FullStack Engineer" , profile:'./male.jpeg'},
+  { salutation: "Mr", name: "Collins Kamau", skill: "Frontend Engineer", profile:'./male.jpeg' },
+  { salutation: "Miss", name: "Yvonna shiala", skill: "Frontend Engineer", profile:'./female.jpeg' },
 ];
 
 const TeamSection = () => (
@@ -27,8 +27,8 @@ const TeamSection = () => (
               : "border-gray-200 dark:border-[#323247]"
           } animate-fade-in`}
         >
-          <div className="bg-primary dark:bg-secondary text-white dark:text-primary rounded-full w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center mb-3 text-2xl sm:text-3xl font-bold shadow-sm">
-            {member.name.split(" ").map((w) => w[0]).join("")}
+          <div className="bg-primary dark:bg-secondary text-white dark:text-primary rounded-full w-28 h-28 sm:w-28 sm:h-28 flex items-center justify-center mb-3 text-2xl sm:text-3xl font-bold shadow-sm">
+            <img src={member.profile} className="rounded-full w-28 h-28 sm:w-28 sm:h-28" alt={member.name} />
           </div>
           <span className="font-medium text-base sm:text-lg mb-1 text-primary dark:text-white text-center">
             {member.salutation}. {member.name}
