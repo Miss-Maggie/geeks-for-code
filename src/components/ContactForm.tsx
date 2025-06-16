@@ -24,8 +24,8 @@ const ContactForm = () => {
         // className="my-12 sm:my-20 max-w-full sm:max-w-lg mx-auto rounded-2xl shadow-lg border border-gray-200 dark:border-[#323247] animate-fade-in
         //   bg-card dark:bg-[#232437] px-1 xs:px-1 sm:px-3 py-3 sm:py-5 w-full"
       >
-        <h2 className="text-xl sm:text-2xl font-bold mb-2 flex items-center gap-2 text-[#070A52] dark:text-white">
-          <MailIcon size={24} className="text-[#070A52] dark:text-white" /> Need
+        <h2 className="text-xl sm:text-2xl font-bold mb-2 flex items-center gap-2 text-primary dark:text-white">
+          <MailIcon size={24} className="text-primary dark:text-white" /> Need
           Coding Help?
         </h2>
         <p className="text-muted-foreground mb-5 sm:mb-6 dark:text-gray-300 text-sm sm:text-base">
