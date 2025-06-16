@@ -78,7 +78,7 @@ const HeroSection = () => (
 
       {/* Location */}
       <a
-        href="https://maps.google.com?q=Geeks+For+Code+HQ"
+        href="https://maps.google.com?q=Nairobi"
         target="_blank"
         rel="noopener noreferrer"
         className="flex flex-col items-center gap-2 text-center"
