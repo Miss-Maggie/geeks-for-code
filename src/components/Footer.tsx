@@ -57,7 +57,7 @@ const Footer = () => (
         Services
       </a>
       <a
-        href="#contact"
+        href="/contact"
         className="font-bold story-link hover-scale transition text-primary dark:text-white"
         style={{ textDecoration: 'none' }}
       >
