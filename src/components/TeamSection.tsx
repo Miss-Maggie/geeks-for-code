@@ -2,7 +2,7 @@
 import { Crown } from "lucide-react";
 
 const members = [
-  { salutation: "", name: "Ephesians Lewis", role: "Leader", skill: "Backend Engineer", profile:'./power.png' },
+  { salutation: "", name: "Ephesians Lewis", role: "Leader", skill: "Backend Engineer", profile:'./lewis.png' },
   { salutation: "", name: "Vincent Odhiambo", skill: "Operations Engineer", profile:'./male.jpeg' },
   { salutation: "", name: "Magdaline Muthui", skill: "Frontend Engineer", profile:'./maggie.jpg' },
   { salutation: "", name: "Protas Junior", skill: "FullStack Engineer" , profile:'./male.jpeg'},
