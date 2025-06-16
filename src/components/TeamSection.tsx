@@ -35,7 +35,7 @@ const members = [
     name: "Magdaline Muthui",
     skill: "Frontend Engineer",
     profile: "./maggie.jpg",
-    github: "https://github.com/Miss-Maggie",
+    github: "www.linkedin.com/in/magdaline-muthui-82b79a251",
     linkedin: "https://linkedin.com/in/magdaline",
     email: "mailto:magdalinemutave001@gmail.com",
   },
