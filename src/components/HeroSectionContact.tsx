@@ -49,8 +49,6 @@ const HeroSection = () => (
       Geeks for Code is built on support, growth, and shared passion for tech.
     </p>
 
-    {/* Contact Title */}
-    <h2 className="text-xl font-semibold text-primary dark:text-white mb-4 text-center">Reach Out to Us</h2>
 
     {/* Contact Icons */}
     <div className="flex flex-wrap justify-center gap-6 mb-10">
