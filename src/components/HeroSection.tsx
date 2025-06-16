@@ -13,7 +13,7 @@ const HeroSection = () => (
       Geeks for Code
     </h1>
     <p className="max-w-2xl text-lg sm:text-xl text-center text-muted-foreground mb-6 px-2">
-      <span className="font-semibold text-primary dark:text-white">10 passionate members</span> collaborating to learn, build, and help others with coding, assignments, and upskilling.
+      <span className="font-semibold text-primary dark:text-white">10 passionate members</span> collaborating to learn, build, and help others with coding, projects, and upskilling while working on clients projects and solving problems.
     </p>
     <div className="flex gap-4 sm:gap-6 mb-8 flex-wrap justify-center">
       <Code2 size={40} className="text-primary dark:text-white hover-scale" />

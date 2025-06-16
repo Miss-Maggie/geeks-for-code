@@ -32,37 +32,24 @@ const scrollToContact = () => {
     contact.scrollIntoView({ behavior: "smooth" });
   } else {
     // Navigate to home with hash
-    window.location.href = "/#contact";
+    window.location.href = "/contact";
   }
 };
 
-const Services = () => (
+const Projects = () => (
   <>
    <Navbar />
     <main className="min-h-screen bg-[#edeef5] dark:bg-[#191b24] pt-9 pb-16 px-4">
     <div className="max-w-3xl mx-auto text-center mb-14">
-      <h1 className="text-4xl font-extrabold text-primary dark:text-white mb-3">Our Services</h1>
+      <h1 className="text-4xl font-extrabold text-primary dark:text-white mb-3">Our Projects</h1>
       <p className="text-lg text-muted-foreground mb-6">
-        At <span className="font-semibold text-primary dark:text-white">Geeks for Code</span>, we do more than just build websites!
-      </p>
-      <p className="text-base text-muted-foreground">
-        Need a modern website, a new app, or help automating your workflow? <span className="font-bold text-primary dark:text-white">Request help today or a Quote for your Website, Application or your Management System</span> and collaborate with our group of talented developers to get your challenges solved. <br />
-        Our group of skilled members can assist with:
-      </p>
-      <ul className="list-disc text-left text-base text-primary dark:text-white font-medium mt-5 ml-8">
-        <li>Website and portfolio creation</li>
-        <li>Custom web and mobile apps</li>
-        <li>UI/UX improvements</li>
-        <li>APIs & integrations</li>
-        <li>Coursework, assignments, and mentoring</li>
-        <li>Debugging, code reviews, and more!</li>
-      </ul>
-      <p className="text-base text-muted-foreground mt-8">
-        To request help, just scroll down and fill out the contact form, or click the button below. We'll get back to you fast!
+        <span className="font-semibold text-primary dark:text-white">Geeks for Code Portfolio</span>
       </p>
     </div>
+     <h1 className="text-center text-6xl">Comming Soon </h1>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-9 max-w-5xl mx-auto">
-      {services.map((service) => (
+
+      {/* {services.map((service) => (
         <div
           key={service.title}
           className="bg-white dark:bg-[#232437] rounded-xl border border-gray-100 dark:border-[#323247] shadow-md p-8 flex flex-col items-center hover:shadow-lg transition"
@@ -71,7 +58,7 @@ const Services = () => (
           <h3 className="mt-4 mb-2 text-2xl font-bold text-primary dark:text-white">{service.title}</h3>
           <p className="text-muted-foreground text-center">{service.desc}</p>
         </div>
-      ))}
+      ))} */}
     </div>
     <div className="text-center mt-14">
       <button
@@ -89,4 +76,4 @@ const Services = () => (
 
 );
 
-export default Services;
+export default Projects;
