@@ -55,7 +55,7 @@ const ContactForm = () => {
           />
           <button
             type="submit"
-            className="w-full bg-[#070A52] dark:bg-[#070A52] text-white px-5 py-2 rounded-md font-medium hover:scale-105 transition story-link flex items-center justify-center gap-2"
+            className="w-full rounded-lg font-medium bg-primary text-primary-foreground text-lg shadow-lg story-link hover-scale transition-allpx-5 py-2 transition story-link flex items-center justify-center gap-2"
             disabled={sent}
           >
             {sent ? (
