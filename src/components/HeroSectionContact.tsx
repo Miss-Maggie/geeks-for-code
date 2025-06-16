@@ -54,7 +54,7 @@ const HeroSection = () => (
     <div className="flex flex-wrap justify-center gap-6 mb-10">
       {/* Contact */}
       <a
-        href="#contact"
+        href="https://wa.me/254758039176?text=Hi%2C%20I%20would%20like%20to%20inquire%20something%20from%20Geeks%20for%20Code."
         className="flex flex-col items-center gap-2 text-center"
         aria-label="Contact"
       >

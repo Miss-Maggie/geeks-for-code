@@ -2,16 +2,16 @@
 import { Crown } from "lucide-react";
 
 const members = [
-  { salutation: "Mr", name: "Ephesians Lewis", role: "Leader", skill: "Backend Engineer", profile:'./power.png' },
-  { salutation: "Mr", name: "Vincent Odhiambo", skill: "Operations Engineer", profile:'./male.jpeg' },
-  { salutation: "Miss", name: "Magdaline Muthui", skill: "Frontend Engineer", profile:'./maggie.jpg' },
-  { salutation: "Mr", name: "Protas Junior", skill: "FullStack Engineer" , profile:'./male.jpeg'},
-  { salutation: "Miss", name: "Juliet Marcs", skill: "Frontend Engineer", profile:'./female.jpeg' },
-  { salutation: "Miss", name: "Hazzel Mochogo", skill: "Clound Engineer", profile:'./female.jpeg' },
-  { salutation: "Miss", name: "Mary Wangari", skill: "Frontend  Engineer", profile:'./female.jpeg' },
-  { salutation: "Mr", name: "Abel Sifuna", skill: "FullStack Engineer" , profile:'./male.jpeg'},
-  { salutation: "Mr", name: "Collins Kamau", skill: "Frontend Engineer", profile:'./male.jpeg' },
-  { salutation: "Miss", name: "Yvonna shiala", skill: "Frontend Engineer", profile:'./female.jpeg' },
+  { salutation: "", name: "Ephesians Lewis", role: "Leader", skill: "Backend Engineer", profile:'./power.png' },
+  { salutation: "", name: "Vincent Odhiambo", skill: "Operations Engineer", profile:'./male.jpeg' },
+  { salutation: "", name: "Magdaline Muthui", skill: "Frontend Engineer", profile:'./maggie.jpg' },
+  { salutation: "", name: "Protas Junior", skill: "FullStack Engineer" , profile:'./male.jpeg'},
+  { salutation: "", name: "Juliet Marcs", skill: "Frontend Engineer", profile:'./female.jpeg' },
+  { salutation: "", name: "Hazzel Mochogo", skill: "Clound Engineer", profile:'./female.jpeg' },
+  { salutation: "", name: "Mary Wangari", skill: "Frontend  Engineer", profile:'./female.jpeg' },
+  { salutation: "", name: "Abel Sifuna", skill: "FullStack Engineer" , profile:'./male.jpeg'},
+  { salutation: "", name: "Collins Kamau", skill: "Frontend Engineer", profile:'./male.jpeg' },
+  { salutation: "", name: "Yvonna shiala", skill: "Frontend Engineer", profile:'./shiala.jpeg' },
 ];
 
 const TeamSection = () => (
