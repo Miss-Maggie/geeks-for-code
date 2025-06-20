@@ -43,10 +43,10 @@ const members = [
     salutation: "",
     name: "Protas Junior",
     skill: "FullStack Engineer",
-    profile: "./male.jpeg",
+    profile: "./protas.jpeg",
     github: "https://github.com/protas",
     linkedin: "https://linkedin.com/in/protas",
-    email: "mailto:protas@example.com",
+    email: "mailto:protasjunior254@gmail.com",
   },
   {
     salutation: "",
