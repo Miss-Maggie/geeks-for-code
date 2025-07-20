@@ -42,7 +42,7 @@ const HeroSection = () => (
 
       {/* Email */}
       <a
-        href="mailto:geeksforcode01@gmail.com"
+        href="mailto:geeksforcodeint@gmail.com"
         className="flex flex-col items-center gap-2 text-center"
         aria-label="Email"
       >
