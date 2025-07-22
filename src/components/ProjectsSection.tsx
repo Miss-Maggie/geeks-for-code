@@ -11,25 +11,25 @@ import {
 
 const projects = [
   {
-    title: "Real Estate Platform",
-    image: "./project.jpg",
+    title: "The E-Enhancement Center",
+    image: "./enhancement.jpeg",
     description: "A real estate listing platform that allows agents and buyers to interact, manage property data, and perform secure transactions.",
-    tech: ["Next.js", "Tailwind", "PostgreSQL", "Supabase", "Prisma"],
-    live: "https://makao-demo.vercel.app",
+    tech: ["WordPress"],
+    live: "https://e-enhancement.com/",
   },
   {
-    title: "HealthSync Medical System",
-    image: "./project.jpg",
+    title: "Lite Coin Sourcing",
+    image: "./litecoin.jpeg",
     description: "Modular hospital appointment and record system with real-time notifications, role-based access, and OAuth 2.0 authentication.",
-    tech: ["Django", "DRF", "PostgreSQL", "OAuth2", "Swagger"],
-    live: "https://healthsync-demo.vercel.app",
+    tech: ["Django", "DRF", "React", "SQL", "OAuth2", "Swagger"],
+    live: "https://litecoin.co.ke/",
   },
   {
-    title: "Shopverse E-Commerce API",
-    image: "./project.jpg",
+    title: "Utensilia Home Mart",
+    image: "./utensilia.jpeg",
     description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
-    tech: ["Express", "TypeScript", "MongoDB", "JWT", "Stripe"],
-    live: "https://shopverse.vercel.app",
+    tech: ["Django", "Bootstrap", "SQL", "JWT"],
+    live: "https://utensiliahomemart.co.ke/",
   },
 ];
 
@@ -39,8 +39,8 @@ const ProjectSection = () => {
       <h2 className="text-2xl sm:text-3xl font-semibold text-primary dark:text-white text-center mb-6 sm:mb-8">
         Featured Projects
       </h2>
-      <h1 className="text-3xl text-center font-extrabold">Comming Soon</h1>
-      {/* <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 justify-center">
+      {/* <h1 className="text-3xl text-center font-extrabold">Comming Soon</h1> */}
+      <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 justify-center">
         {projects.map((project) => (
           <Dialog key={project.title}>
             <DialogTrigger asChild>
@@ -95,7 +95,7 @@ const ProjectSection = () => {
             </DialogContent>
           </Dialog>
         ))}
-      </div> */}
+      </div>
     </section>
   );
 };

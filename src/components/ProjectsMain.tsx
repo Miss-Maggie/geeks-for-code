@@ -10,39 +10,75 @@ import {
 } from "@/components/ui/dialog";
 
 const projects = [
-  {
-    title: "Real Estate Platform",
-    image: "./project.jpg",
-    description: "A real estate listing platform that allows agents and buyers to interact, manage property data, and perform secure transactions.",
-    tech: ["Next.js", "Tailwind", "PostgreSQL", "Supabase", "Prisma"],
-    live: "https://makao-demo.vercel.app",
-  },
-  {
-    title: "HealthSync Medical System",
-    image: "./project.jpg",
-    description: "Modular hospital appointment and record system with real-time notifications, role-based access, and OAuth 2.0 authentication.",
-    tech: ["Django", "DRF", "PostgreSQL", "OAuth2", "Swagger"],
-    live: "https://healthsync-demo.vercel.app",
-  },
-  {
-    title: "Shopverse E-Commerce API",
-    image: "./project.jpg",
+      {
+    title: "Features Collaboration Platform",
+    image: "./features.jpeg",
     description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
-    tech: ["Express", "TypeScript", "MongoDB", "JWT", "Stripe"],
-    live: "https://shopverse.vercel.app",
+    tech: ["Django", "Bootstrap", "SQL", "JWT"],
+    live: "https://utensiliahomemart.co.ke/",
   },
+  {
+    title: "The E-Enhancement Center",
+    image: "./enhancement.jpeg",
+    description: "A real estate listing platform that allows agents and buyers to interact, manage property data, and perform secure transactions.",
+    tech: ["WordPress"],
+    live: "https://e-enhancement.com/",
+  },
+  {
+    title: "Lite Coin Sourcing",
+    image: "./litecoin.jpeg",
+    description: "Modular hospital appointment and record system with real-time notifications, role-based access, and OAuth 2.0 authentication.",
+    tech: ["Django", "DRF", "React", "SQL", "OAuth2", "Swagger"],
+    live: "https://litecoin.co.ke/",
+  },
+  {
+    title: "Utensilia Home Mart",
+    image: "./utensilia.jpeg",
+    description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
+    tech: ["Django", "Bootstrap", "SQL", "JWT"],
+    live: "https://utensiliahomemart.co.ke/",
+  },
+   {
+    title: "Zote Ziko Africa",
+    image: "./zoteziko.jpeg",
+    description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
+    tech: ["Django", "Bootstrap", "SQL", "JWT"],
+    live: "https://utensiliahomemart.co.ke/",
+  },
+     {
+    title: "Max Digital PR",
+    image: "./maxdigital.jpeg",
+    description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
+    tech: ["Django", "Bootstrap", "SQL", "JWT"],
+    live: "https://utensiliahomemart.co.ke/",
+  },
+     {
+    title: "Caribbean Shoes",
+    image: "./caribbean.jpeg",
+    description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
+    tech: ["Django", "Bootstrap", "SQL", "JWT"],
+    live: "https://utensiliahomemart.co.ke/",
+  },
+     {
+    title: "CodeVista",
+    image: "./codevista.jpeg",
+    description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
+    tech: ["Django", "Bootstrap", "SQL", "JWT"],
+    live: "https://utensiliahomemart.co.ke/",
+  },
+
 ];
 
 const ProjectSection = () => {
   return (
     <section className="my-12 sm:my-20">
-      <h1 className="text-3xl text-center font-extrabold">Comming Soon</h1>
-      {/* <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 justify-center">
+      {/* <h1 className="text-3xl text-center font-extrabold">Comming Soon</h1> */}
+      <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 justify-center">
         {projects.map((project) => (
           <Dialog key={project.title}>
             <DialogTrigger asChild>
-              <div className="cursor-pointer flex flex-col items-center bg-white dark:bg-[#232437] rounded-xl shadow p-5 sm:p-6 border border-gray-200 dark:border-[#323247] hover:shadow-lg transition">
-                <div className="w-full h-40 sm:h-48 overflow-hidden rounded-md mb-4">
+              <div className="cursor-pointer flex flex-col items-center bg-white dark:bg-[#232437] rounded-xl shadow p-1 sm:p-4 border border-gray-200 dark:border-[#323247] hover:shadow-lg transition">
+                <div className="w-full overflow-hidden rounded-md mb-4">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -92,7 +128,7 @@ const ProjectSection = () => {
             </DialogContent>
           </Dialog>
         ))}
-      </div> */}
+      </div>
     </section>
   );
 };

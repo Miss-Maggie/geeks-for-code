@@ -20,7 +20,7 @@ const ContactForm = () => {
       </h2>
       <section
         id="contact"
-        className="my-12 sm:my-20 max-w-full  mx-auto sm:max-w-[90%] rounded-2xl shadow-lg border border-gray-200 dark:border-[#323247] animate-fade-in bg-card dark:bg-[#232437] px-1 xs:px-1 sm:px-3 py-3 sm:py-5 w-full"
+        className="my-12 p-5 sm:my-20 max-w-full   mx-auto sm:max-w-[90%] rounded-2xl shadow-lg border border-gray-200 dark:border-[#323247] animate-fade-in bg-card dark:bg-[#232437] px-1 xs:px-1 sm:px-10 py-5 sm:py-10 w-full"
         // className="my-12 sm:my-20 max-w-full sm:max-w-lg mx-auto rounded-2xl shadow-lg border border-gray-200 dark:border-[#323247] animate-fade-in
         //   bg-card dark:bg-[#232437] px-1 xs:px-1 sm:px-3 py-3 sm:py-5 w-full"
       >

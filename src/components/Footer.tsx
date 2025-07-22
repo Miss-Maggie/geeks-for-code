@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Footer = () => (
-  <footer className=" lg:flex w-full py-5 sm:py-6 border-t border-gray-100 mt-10 sm:mt-12 flex-col items-center bg-white dark:bg-[#171823] px-4">
+  <footer className=" hidden md:block lg:flex w-full py-5 sm:py-6 border-t border-gray-100 mt-10 sm:mt-12 flex-col items-center bg-white dark:bg-[#171823] px-4">
     <nav className="flex flex-wrap gap-x-6 gap-y-2 justify-center mb-2 sm:mb-3">
       <Link
         to="/"
