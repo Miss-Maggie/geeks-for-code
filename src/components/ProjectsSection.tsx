@@ -10,61 +10,25 @@ import {
 } from "@/components/ui/dialog";
 
 const projects = [
-  {
+    {
     title: "The E-Enhancement Center",
     image: "./enhancement.jpeg",
-    description: "A real estate listing platform that allows agents and buyers to interact, manage property data, and perform secure transactions.",
+    description: "Welcome to The e-Enhancement Center, an internationally recognized Information Communication Technology (ICT) consultancy firm, providing services to organizations in the government, public networks, corporate sectors and International NGOs.",
     tech: ["WordPress"],
     live: "https://e-enhancement.com/",
   },
   {
-    title: "Features Collaboration Platform",
-    image: "./features.jpeg",
-    description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
-    tech: ["React", "Express", "JWT", "PostgreSQL"],
-    live: "https://utensiliahomemart.co.ke/",
-  },
-  {
     title: "Lite Coin Sourcing",
     image: "./litecoin.jpeg",
-    description: "Modular hospital appointment and record system with real-time notifications, role-based access, and OAuth 2.0 authentication.",
+    description: "Your trusted partner in China-Africa trade. We help African businesses source quality products from verified Chinese manufacturers with complete quality assurance and logistics support.",
     tech: ["Django", "DRF", "React", "SQL", "OAuth2", "Swagger"],
     live: "https://litecoin.co.ke/",
   },
   {
     title: "Utensilia Home Mart",
     image: "./utensilia.jpeg",
-    description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
+    description: "Utensilia is a center for stylish, durable, and affordable kitchenware to make every cooking experience a joy. From everyday essentials to specialty tools, our products are designed to help home chefs create with confidence and flair.",
     tech: ["Django", "Bootstrap", "SQL", "JWT"],
-    live: "https://utensiliahomemart.co.ke/",
-  },
-  {
-    title: "Zote Ziko Africa",
-    image: "./zoteziko.jpeg",
-    description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
-    tech: ["Django", "Bootstrap", "SQL", "JWT"],
-    live: "https://utensiliahomemart.co.ke/",
-  },
-  {
-    title: "Max Digital PR",
-    image: "./maxdigital.jpeg",
-    description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
-    tech: ["React", "Django", "DRF","JWT"],
-    live: "https://utensiliahomemart.co.ke/",
-  },
-  {
-    title: "Caribbean Shoes",
-    image: "./caribbean.jpeg",
-    description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
-    tech: ["Django", "Bootstrap", "SQL", "JWT", "HTML", "CSS"],
-    live: "https://utensiliahomemart.co.ke/",
-  },
-  {
-    title: "CodeVista",
-    image: "./codevista.jpeg",
-    description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
-    tech: ["React", "Django", "DRF", "JWT"],
-
     live: "https://utensiliahomemart.co.ke/",
   },
 ];
