@@ -14,7 +14,7 @@ const projects = [
     title: "Features Collaboration Platform",
     image: "./features.jpeg",
     description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
-    tech: ["Django", "Bootstrap", "SQL", "JWT"],
+    tech: ["React", "Express", "JWT", "PostgreSQL"],
     live: "https://utensiliahomemart.co.ke/",
   },
   {
@@ -49,21 +49,22 @@ const projects = [
     title: "Max Digital PR",
     image: "./maxdigital.jpeg",
     description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
-    tech: ["Django", "Bootstrap", "SQL", "JWT"],
+    tech: ["React", "Django", "DRF","JWT"],
     live: "https://utensiliahomemart.co.ke/",
   },
      {
     title: "Caribbean Shoes",
     image: "./caribbean.jpeg",
     description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
-    tech: ["Django", "Bootstrap", "SQL", "JWT"],
+    tech: ["Django", "Bootstrap", "SQL", "JWT", "HTML", "CSS"],
     live: "https://utensiliahomemart.co.ke/",
   },
      {
     title: "CodeVista",
     image: "./codevista.jpeg",
     description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
-    tech: ["Django", "Bootstrap", "SQL", "JWT"],
+    tech: ["React", "Django", "DRF", "JWT"],
+
     live: "https://utensiliahomemart.co.ke/",
   },
 
