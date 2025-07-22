@@ -18,6 +18,13 @@ const projects = [
     live: "https://e-enhancement.com/",
   },
   {
+    title: "Features Collaboration Platform",
+    image: "./features.jpeg",
+    description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
+    tech: ["React", "Express", "JWT", "PostgreSQL"],
+    live: "https://utensiliahomemart.co.ke/",
+  },
+  {
     title: "Lite Coin Sourcing",
     image: "./litecoin.jpeg",
     description: "Modular hospital appointment and record system with real-time notifications, role-based access, and OAuth 2.0 authentication.",
@@ -29,6 +36,35 @@ const projects = [
     image: "./utensilia.jpeg",
     description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
     tech: ["Django", "Bootstrap", "SQL", "JWT"],
+    live: "https://utensiliahomemart.co.ke/",
+  },
+  {
+    title: "Zote Ziko Africa",
+    image: "./zoteziko.jpeg",
+    description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
+    tech: ["Django", "Bootstrap", "SQL", "JWT"],
+    live: "https://utensiliahomemart.co.ke/",
+  },
+  {
+    title: "Max Digital PR",
+    image: "./maxdigital.jpeg",
+    description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
+    tech: ["React", "Django", "DRF","JWT"],
+    live: "https://utensiliahomemart.co.ke/",
+  },
+  {
+    title: "Caribbean Shoes",
+    image: "./caribbean.jpeg",
+    description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
+    tech: ["Django", "Bootstrap", "SQL", "JWT", "HTML", "CSS"],
+    live: "https://utensiliahomemart.co.ke/",
+  },
+  {
+    title: "CodeVista",
+    image: "./codevista.jpeg",
+    description: "A RESTful backend for a modern e-commerce platform with cart, wishlist, payment integrations, and admin dashboard.",
+    tech: ["React", "Django", "DRF", "JWT"],
+
     live: "https://utensiliahomemart.co.ke/",
   },
 ];
